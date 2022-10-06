@@ -3,7 +3,8 @@
 -------------------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@700&display=swap');
 /*------------------------------------------------------------------
     IMPORT FILES
 -------------------------------------------------------------------*/
@@ -22,7 +23,8 @@
 -------------------------------------------------------------------*/
 
 body {
-    color: #999;
+    background-color:#3a3939; 
+    color: rgb(255, 255, 255);
     font-size: 15px;
     font-family: 'Josefin Sans', sans-serif;
     line-height: 1.80857;
@@ -147,7 +149,7 @@ a,
 .lead {
     font-size: 18px;
     line-height: 30px;
-    color: #767676;
+    color: #ffffff;
     margin: 0;
     padding: 0;
 }
@@ -316,22 +318,24 @@ a img.aligncenter {
 	top: 0px;
 	width: 100%;
 	z-index: 3;
+    background-image: linear-gradient(to right, rgb(245, 118, 139),rgb(250, 118, 195),rgb(197, 62, 197),rgb(175, 46, 226))!important;
 }
 .header_style_01 .header-nav{
-	background: #ffffff;
+    background-image: linear-gradient(to right, rgb(245, 118, 139),rgb(250, 118, 195),rgb(197, 62, 197),rgb(175, 46, 226))!important;
+
 }
 .header-nav .navbar-toggler span {
   background: #ffffff;
 }
 
 .header-nav .navbar-brand {
-	color: #111111;
+	color: #ffffff;
 	font-weight: 800;
 	position: relative;
 	font-size: 23px;
 }
 .header-nav .navbar-brand span {
-	 width: 6px;
+	width: 6px;
     height: 6px;
     border-radius: 50%;
     position: absolute;
@@ -360,7 +364,7 @@ a img.aligncenter {
 
 /*Navbar Toogle*/
 .navbar-toggler {
-	background: rgb(99, 26, 26);
+	background: rgb(235, 196, 89);
 	border: none;
 	padding: 10px 6px;
 	outline: none !important;
@@ -371,6 +375,14 @@ a img.aligncenter {
 	height: 2px;
 	border-radius: 1px;
 	background: #fff;
+}
+
+
+.navbar-toggler {
+    background: rgb(247, 54, 205);
+    border: none;
+    padding: 10px 6px;
+    outline: none !important;
 }
 .navbar-toggler span + span {
 	margin-top: 4px;
@@ -552,7 +564,7 @@ body.app_version .header_style_01.fixed-menu{
 }
 
 .section.wb {
-    background-color: #ffffff;
+    background-color:#3a3939;
 }
 
 .section.lb {
@@ -560,7 +572,7 @@ body.app_version .header_style_01.fixed-menu{
 }
 
 .section.db {
-    background-color: #1f1f1f;
+    background-color: #3a3939;
 }
 
 .section.color1 {
@@ -574,16 +586,6 @@ body.app_version .header_style_01.fixed-menu{
     padding: 16em 0 13em;
 }
 
-.first-section h2 {
-    color: #ffffff;
-    font-size: 68px;
-    font-weight: 600;
-    text-transform: capitalize;
-    display: block;
-    margin: 0;
-    padding: 0 0 30px;
-    position: relative;
-}
 
 .first-section .lead {
     font-size: 21px;
@@ -604,15 +606,7 @@ body.app_version .header_style_01.fixed-menu{
 .section-title {
     display: block;
     position: relative;
-    margin-bottom: 60px;
-}
-
-.section-title p {
-    color: #999;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 33px;
-    margin: 0;
+    margin-bottom: 50px;
 }
 
 .section-title h3 {
@@ -622,6 +616,7 @@ body.app_version .header_style_01.fixed-menu{
     margin: 0 0 25px;
     padding: 0;
     text-transform: none;
+    color: white;
 }
 
 .section.colorsection p,
@@ -636,7 +631,7 @@ body.app_version .header_style_01.fixed-menu{
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 1px rgba(215, 59, 230, 0);
     position: relative;
     -webkit-transition-property: color;
     transition-property: color;
@@ -651,7 +646,7 @@ body.app_version .header_style_01.fixed-menu{
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgb(99, 26, 26);
+    background: rgb(248, 87, 194);
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
@@ -662,6 +657,7 @@ body.app_version .header_style_01.fixed-menu{
     transition-duration: 0.5s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
+    border-radius: 30px;
 }
 
 .hvr-bounce-to-right:hover::before, .hvr-bounce-to-right:focus::before, .hvr-bounce-to-right:active::before{
@@ -670,10 +666,11 @@ body.app_version .header_style_01.fixed-menu{
 	-webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 	transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
-
-.cd-hero__btn:hover{
-	color: #ffffff;
-    background-color: rgb(99, 26, 26) !important;
+.cd-hero__btn{
+    color: rgb(248, 87, 194);
+    background-color: inherit;
+    border: 2px solid rgb(248, 87, 194);
+    border-radius: 30px;
 }
 
 .js-cd-slide::before{
@@ -681,21 +678,33 @@ body.app_version .header_style_01.fixed-menu{
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: rgba(230,81,0,0.25);
+	background: #3a3939;
 	left: 0px;
 	right: 0px;
 	top: 0px;
 	z-index: 0;
 }
+.cd-hero__content--img .img-fluid{
+    border-radius: 50%!important;
+    
+}
 
 
-.about-right h2{
+.about-right h2{ 
 	font-size: 32px;
 	font-weight: 600;
+    
+
 }
-.about-right p{
-	font-size: 16px; 
-	font-weight: 300;
+.about-right h3{
+	font-size: 20px; 
+	font-weight: 500;
+    position: absolute;
+    bottom: -80px;
+    margin:0px 100px 0px 0px!important;
+    color: #d4cece;
+    
+
 }
 
 
@@ -1740,5 +1749,65 @@ body.app_version .dev-list .widget-title small{
 }
 
 
+/* about page */
+div.about-left{
+    position: relative;
+    bottom: 60px;
+    margin:0px 0px 15px 270px;
+
+}
+
+.A{
+    display: flex;
+}
+
+.a{
+    height: 300px;
+    width: 350px;
+    /* background-color: rgba(245, 118, 139, 40%); */
+    margin: 0px 0px 30px 250px;
+    border-radius: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.a h2{
+ margin-left:107px;
+}
+
+.b{
+    height: 20%;
+    width: 90%;
+    background-color: rgb(245, 118, 139);
+    margin: 10px 0px 0px 15px;
+    border-radius: 30px;
+    
+}
+.b h4{
+    margin:10px 0px 0px 20px;
+
+}
+.b p{
+    margin:-8px 0px 0px 20px; 
+}
+
+
+.B{
+    margin: 30px 0px 30px 250px;
+    display: block;
+
+}
+.Bc{
+    display: flex;
+}
+
+.ab{
+    margin: 10px 7px 0px 0px;
+}
+
+#projects{
+    margin-top: 100px;
+}
 
 
