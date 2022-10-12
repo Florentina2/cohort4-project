@@ -311,6 +311,19 @@ Hero Slider - by CodyHouse.co
   }
 }
 
+@media (width:570px){
+  .cd-hero__content--img{
+    width: 50% !important;
+    position: absolute !important;
+    bottom: 10% !important;
+    left:auto!important;
+    right:10% !important;
+    top: auto !important;
+    
+  }
+}
+
+
 
 .cd-hero__content.cd-hero__content--bg-video {
   /* hide video on mobile device */
